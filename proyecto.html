@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Proyecto — Juan Manuel Orellana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg2: #111111;
+      --green: #39ff14;
+      --text: #ffffff;
+      --text2: #a0a0a0;
+      --border: rgba(255,255,255,0.08);
+      --mono: 'JetBrains Mono', monospace;
+      --sans: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    header {
+      height: 60px;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+    }
+    .back-link {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--green); }
+    .project-title { font-family: var(--mono); font-size: 1rem; color: var(--green); }
+    
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: #1a1a1a;
+    }
+    .pdf-container {
+      width: 90%;
+      height: 90%;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+    iframe { width: 100%; height: 100%; border: none; }
+
+    footer {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      border-top: 1px solid var(--border);
+      background: var(--bg2);
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--mono);
+    }
+    .btn-github { background: #24292e; color: #fff; }
+    .btn-demo { background: var(--green); color: #000; }
+    .btn-pdf { border: 1px solid var(--border); color: var(--text); }
+    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="back-link">← Volver</a>
+  <div class="project-title" id="title">Cargando...</div>
+  <div style="width: 80px;"></div>
+</header>
+
+<main>
+  <div class="pdf-container">
+    <iframe id="pdf-viewer" src=""></iframe>
+  </div>
+</main>
+
+<footer>
+  <a href="#" id="btn-github" target="_blank" class="btn btn-github">GitHub</a>
+  <a href="#" id="btn-demo" target="_blank" class="btn btn-demo">Demo Live</a>
+  <a href="#" id="btn-pdf" target="_blank" class="btn btn-pdf">Descargar PDF</a>
+</footer>
+
+<script>
+  const projects = {
+    'dress': {
+      title: 'Proyecto Dress — Análisis de Indumentaria',
+      pdf: 'https://github.com/coderhouse2025-droid/Dress---Power-BI/raw/main/Dress.pdf',
+      github: 'https://github.com/coderhouse2025-droid/Dress---Power-BI',
+      demo: ''
+    },
+    'miami-heat': {
+      title: 'Miami Heat — Radiografía de una Cultura',
+      pdf: 'https://github.com/coderhouse2025-droid/Miami-Heat/raw/main/Miami_Heat.pdf',
+      github: 'https://github.com/coderhouse2025-droid/Miami-Heat',
+      demo: 'https://github.com/coderhouse2025-droid/Miami-Heat/tree/main/Demo'
+    },
+    'supertienda': {
+      title: 'Supertienda LatAm — Análisis de Ventas',
+      pdf: 'https://github.com/coderhouse2025-droid/Supertienda/raw/main/Supertienda.pdf',
+      github: 'https://github.com/coderhouse2025-droid/Supertienda',
+      demo: 'https://github.com/coderhouse2025-droid/Supertienda/tree/main/Demo'
+    },
+    'control-cuentas': {
+      title: 'Control de Cuentas — n8n + Claude API',
+      pdf: 'https://github.com/coderhouse2025-droid/n8n_Workflows/raw/main/n8n_Worflows.pdf',
+      github: 'https://github.com/coderhouse2025-droid/n8n_Workflows',
+      demo: ''
+    },
+    'norma-ar': {
+      title: 'norma-ar — Asistente IA Normativa Nuclear',
+      pdf: '',
+      github: 'https://github.com/coderhouse2025-droid/norma-ar',
+      demo: ''
+    },
+    'michiplay': {
+      title: 'MichiPlay — Juego de Plataformas Espacial',
+      pdf: 'https://github.com/coderhouse2025-droid/MichiPlay/raw/main/Maat_Astronauta.pdf',
+      github: 'https://github.com/coderhouse2025-droid/MichiPlay',
+      demo: ''
+    },
+    'portafolio': {
+      title: 'Portafolio Personal — Data Science & ML',
+      pdf: 'https://github.com/coderhouse2025-droid/Portafolio-JM/raw/main/Portafolio_JM.pdf',
+      github: 'https://github.com/coderhouse2025-droid/Portafolio-JM',
+      demo: ''
+    },
+    'tableros': {
+      title: 'Tableros Interactivos — CV Dinámico & Dashboards',
+      pdf: '',
+      github: 'https://github.com/coderhouse2025-droid/Tableros-Interactivos',
+      demo: ''
+    }
+  };
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = urlParams.get('p');
+  const project = projects[projectId];
+
+  if (project) {
+    document.title = project.title + ' — Juan Manuel Orellana';
+    document.getElementById('title').textContent = project.title;
+    
+    if (project.pdf) {
+      document.getElementById('pdf-viewer').src = 'https://docs.google.com/viewer?url=' + encodeURIComponent(project.pdf) + '&embedded=true';
+      document.getElementById('btn-pdf').href = project.pdf;
+    } else {
+      document.querySelector('main').innerHTML = '<div style="color:var(--text2);font-family:var(--mono)">Vista previa no disponible para este proyecto.</div>';
+      document.getElementById('btn-pdf').classList.add('hidden');
+    }
+
+    if (project.github) {
+      document.getElementById('btn-github').href = project.github;
+    } else {
+      document.getElementById('btn-github').classList.add('hidden');
+    }
+
+    if (project.demo) {
+      document.getElementById('btn-demo').href = project.demo;
+    } else {
+      document.getElementById('btn-demo').classList.add('hidden');
+    }
+  } else {
+    document.body.innerHTML = '<div style="height:100vh;display:flex;align-items:center;justify-content:center;color:white;background:black">Proyecto no encontrado. <a href="index.html" style="color:var(--green);margin-left:1rem">Volver</a></div>';
+  }
+</script>
+
+</body>
+</html>
