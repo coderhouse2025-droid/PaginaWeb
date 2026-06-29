@@ -79,3 +79,72 @@ Al tratarse de una arquitectura de archivos estáticos que consume APIs externas
 ---
 
 ## 🏗️ Arquitectura del sitio
+Visitante (Navegador Móvil / Desktop)
+↓
+GitHub Pages (CDN e Infraestructura Estática)
+↓
+index.html  ←── Tailwind CSS (Estilos utilitarios responsivos y dinámicos)
+↓
+JavaScript (ES6+ Vanilla)
+├── Fetch → GitHub REST API v3
+│   └── Repositorios públicos → Filtrado por Topics → Renderizado en Grilla
+├── PWA Manifest (manifest.json)
+└── Manipulación del DOM
+└── Modales de Proyectos, Filtros Interactivos y Descarga de CV
+**Principio de diseño:** Despliegue desacoplado de servidores. Todo el procesamiento dinámico de datos se resuelve en el cliente mediante consultas asíncronas seguras con fallbacks controlados para garantizar la estabilidad visual.
+
+---
+
+## 🔄 Pipeline de datos: de repositorios de GitHub a grilla de proyectos
+
+El flujo de integración extrae los repositorios públicos del perfil y los somete a transformaciones de datos inmediatas para asegurar la consistencia y la estética de la interfaz de usuario:
+
+*   **Normalización de Títulos:** Transforma identificadores técnicos tipo slug (`modelo-predictivo-heat`) a cadenas legibles en formato Title Case (`Modelo Predictivo Heat`) mediante expresiones regulares.
+*   **Consistencia de Contenido:** Se aplican reglas de truncado estricto a las descripciones extensas para asegurar la simetría de las tarjetas en la grilla visual, inyectando textos de fallback descriptivos para repositorios que carezcan de documentación inicial.
+*   **Clasificación por Matriz de Equivalencias:** Los *topics* del repositorio se normalizan a minúsculas y se evalúan contra un diccionario de mapeo interno para unificar términos técnicos (`tableau` o `power-bi` se categorizan bajo el filtro unificado de Business Intelligence).
+*   **Algoritmo de Ordenamiento por Calidad:** La lógica de ordenamiento prioriza los proyectos que cuentan con documentación completa y descripción técnica explícita, seguidos por relevancia de interacción (stars) y finalmente por actualización cronológica.
+*   **Mitigación de Rate Limiting:** Se implementa un mecanismo de almacenamiento en caché utilizando `sessionStorage` para evitar llamadas redundantes a la API de GitHub durante la misma sesión del usuario, optimizando el consumo de cuota de red.
+
+---
+
+## 🤔 ¿Por qué este camino y no otro?
+
+*   **Generadores de Sitios Estáticos (Hugo / Gatsby) descartados:** Añaden fricción y flujos operativos extras para actualizar datos dinámicos. El enfoque Vanilla lee los cambios de los repositorios sin necesidad de recompilar ni redesplegar el sitio.
+*   **Entornos No-Code (Webflow / Squarespace) descartados:** No permiten validar competencias reales de ingeniería de software. Construir la arquitectura de forma directa demuestra control absoluto sobre el stack técnico utilizado.
+*   **Portafolios basados en Notion descartados:** Carecen de identidad visual propia, exponen URLs con hashes de terceros poco profesionales y limitan el control analítico del rendimiento web.
+
+---
+
+## ✨ Funcionalidades
+
+*   ⚡ **Rendimiento de Carga Crítico:** Optimizado para ofrecer puntuaciones altas en Core Web Vitals y tiempos mínimos de interactividad.
+*   🎛️ **Filtro Avanzado de Proyectos:** Segmentación en tiempo real para separar trabajos de *Data Science, AI & Automation, y Web Apps*.
+*   📱 **Diseño Adaptativo Vertical:** Estructura modular completamente optimizada para smartphones y formatos verticales.
+*   💼 **Descarga Segura de CV:** Acceso directo e integrado a la documentación profesional sin redirecciones que rompan la experiencia de navegación.
+
+---
+
+## 📁 Estructura del proyecto
+
+/
+├── index.html              # Estructura semántica HTML5 e interfaz principal
+├── css/
+│   └── styles.css          # Configuraciones base de Tailwind CSS y personalizaciones
+├── js/
+│   ├── github-api.js       # Consumo, lógica de filtrado y render de repositorios
+│   └── ui.js               # Control de modales, comportamiento de filtros y UI
+├── manifest.json           # Descriptor de configuración Progressive Web App (PWA)
+└── README.md               # Documentación técnica del repositorio
+
+---
+
+## ⚙️ Instalación local
+
+Para examinar el código o ejecutar el portafolio en un entorno de desarrollo local, clone el repositorio:
+
+```bash
+git clone [https://github.com/coderhouse2025-droid/PaginaWeb.git](https://github.com/coderhouse2025-droid/PaginaWeb.git)
+
+cd PaginaWeb
+
+
