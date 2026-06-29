@@ -172,6 +172,6 @@ python3 -m http.server 8080
 
 ![Footer](https://img.shields.io/badge/Data_Science-Machine_Learning-blueviolet?style=flat-square)
 ![Footer](https://img.shields.io/badge/Business_Intelligence-BI_Analyst-blue?style=flat-square)
-![Footer](https://img.shields.io/badge/Coderhouse-2025-orange?style=flat-square)
+![Footer](https://img.shields.io/badge/Coderhouse-2026-orange?style=flat-square)
 
 </div>
