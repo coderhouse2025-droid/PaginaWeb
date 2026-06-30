@@ -1,177 +1,198 @@
+# 📊 Professional Portfolio Website for Data Analytics
+
 <div align="center">
 
-# 👨‍💻 Portafolio Personal — Juan Manuel Orellana
+### Diseño y desarrollo de un sitio web profesional para la presentación de perfiles orientados a Data Analytics, Business Intelligence y Data Science.
 
-### 🔬 Data Scientist & BI Analyst
-
-[![Deploy](https://img.shields.io/badge/🌐_Ver_Portafolio-Live-brightgreen?style=for-the-badge)](https://coderhouse2025-droid.github.io/PaginaWeb/)
-[![GitHub](https://img.shields.io/badge/GitHub-coderhouse2025--droid-181717?style=for-the-badge&logo=github)](https://github.com/coderhouse2025-droid)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan_Manuel_Orellana-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/juan-manuel-orellana)
-
----
-
-*Transformando datos en decisiones estratégicas · Data Science · Machine Learning · Business Intelligence · Automatización con IA*
+[![Live Demo](https://img.shields.io/badge/🌐_Demo-Live-brightgreen?style=for-the-badge)](https://coderhouse2025-droid.github.io/PaginaWeb/)
+[![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub_Pages-181717?style=for-the-badge\&logo=github)](https://pages.github.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 </div>
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📌 Descripción del Proyecto
 
-- [📌 Sobre el Proyecto](#-sobre-el-proyecto)
-- [✨ Características](#-características)
-- [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-- [⚙️ Decisiones Técnicas](#️-decisiones-técnicas)
-- [📁 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🚀 Instalación y Uso](#-instalación-y-uso)
-- [📊 Métricas](#-métricas)
-- [📬 Contacto](#-contacto)
+Este proyecto consiste en el desarrollo de un sitio web profesional destinado a presentar de manera clara, moderna y visualmente atractiva la trayectoria, experiencia, habilidades técnicas y proyectos de un profesional orientado al análisis de datos.
 
----
+Fue concebido como una solución ligera y de alto rendimiento, basada exclusivamente en tecnologías web nativas, evitando dependencias innecesarias y priorizando la velocidad de carga, la accesibilidad y la compatibilidad entre navegadores.
 
-## 📌 Sobre el Proyecto
+El resultado es una plataforma ideal para profesionales de:
 
-Este repositorio contiene el código fuente de mi **portafolio profesional personal**, desarrollado como sitio web estático y desplegado en **GitHub Pages**. Fue creado en el contexto del curso de **Coderhouse** como proyecto integrador, con el objetivo de presentar mi trayectoria, habilidades técnicas y proyectos de manera profesional, accesible y visualmente atractiva.
-
-El sitio refleja más de **19 años de experiencia** en análisis de datos, auditoría y gestión de procesos, con foco en **Data Science**, **Machine Learning** y **Business Intelligence**.
+* Data Analytics
+* Business Intelligence
+* Data Science
+* Auditoría y Control de Gestión
+* Tecnología y Transformación Digital
 
 ---
 
-## ✨ Características
+## 🎯 Objetivos
 
-- 🎨 **Diseño responsivo** adaptado a dispositivos móviles, tablets y escritorio
-- ⚡ **Carga rápida** gracias a la arquitectura estática sin dependencias de servidor
-- 🌙 Navegación fluida con **scroll suave** entre secciones
-- 📊 Secciones organizadas: Inicio · Sobre mí · Stack Técnico · Experiencia · Formación · Proyectos · Contacto
-- 🔍 Optimizado para **SEO** con metaetiquetas Open Graph y Twitter Cards
-- 🌐 **Despliegue continuo** vía GitHub Pages (sin configuración adicional)
-- 🖼️ Imagen de preview `og-image` para compartir en redes sociales
+* Crear una presencia profesional online moderna.
+* Centralizar experiencia, formación y proyectos en un único sitio.
+* Mostrar habilidades técnicas de manera visual e intuitiva.
+* Optimizar la experiencia de reclutadores y potenciales empleadores.
+* Aplicar buenas prácticas de desarrollo frontend y SEO.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## ✨ Funcionalidades
 
-| Capa | Tecnología | Motivo de elección |
-|------|-----------|-------------------|
-| 🏗️ Estructura | **HTML5** | Semántica moderna, accesibilidad y SEO |
-| 🎨 Estilos | **CSS3** | Control total del diseño sin dependencias externas |
-| ⚙️ Interactividad | **JavaScript (Vanilla)** | Ligereza y rendimiento sin frameworks innecesarios |
-| 🚀 Despliegue | **GitHub Pages** | Gratuito, integrado con el repositorio, HTTPS automático |
-| 📐 Versionado | **Git** | Control de cambios, historial limpio y colaboración |
+### 👤 Presentación Profesional
+
+* Hero section con fotografía profesional.
+* Resumen ejecutivo.
+* Disponibilidad laboral.
+* Enlaces a LinkedIn y GitHub.
+
+### 🛠️ Stack Tecnológico
+
+* Visualización organizada de habilidades técnicas.
+* Barras de competencias.
+* Agrupación por categorías.
+
+### 💼 Experiencia Profesional
+
+* Línea de tiempo profesional.
+* Descripción de funciones y logros.
+
+### 🎓 Formación y Certificaciones
+
+* Formación académica.
+* Certificaciones relevantes.
+* Cursos especializados.
+
+### 📂 Proyectos
+
+* Tarjetas visuales de proyectos.
+* Acceso directo a repositorios GitHub.
+* Navegación intuitiva.
+
+### 📄 Curriculum Vitae
+
+* Descarga directa del CV.
+* Visualización optimizada para reclutadores.
+
+### 📱 Diseño Responsive
+
+* Adaptación automática a:
+
+  * Desktop
+  * Tablet
+  * Mobile
 
 ---
 
-## ⚙️ Decisiones Técnicas
+## 🏗️ Arquitectura Técnica
 
-### 🔵 ¿Por qué HTML, CSS y JavaScript puro?
+El proyecto fue desarrollado utilizando una arquitectura estática basada en:
 
-Se eligió una arquitectura **estática sin frameworks** (sin React, Angular o Vue) por las siguientes razones:
+```text
+HTML5
+CSS3
+JavaScript Vanilla
+GitHub Pages
+```
 
-- **Portafolios personales no requieren estado complejo**: un framework de SPA añadiría overhead innecesario para un sitio mayormente informativo.
-- **Máximo rendimiento**: sin tiempo de hidratación ni bundles pesados, el sitio carga casi instantáneamente.
-- **Compatibilidad universal**: funciona en cualquier navegador moderno sin necesidad de compilación.
-- **Mantenibilidad**: el código es legible y modificable directamente, sin cadenas de build complejas.
+### Principales características técnicas
 
-### 🟢 ¿Por qué GitHub Pages?
+* Sin frameworks frontend.
+* Sin dependencias externas críticas.
+* Alta velocidad de carga.
+* Código simple y fácilmente mantenible.
+* Optimización SEO.
+* Compatibilidad con navegadores modernos.
 
-- **Integración nativa** con el repositorio: cada `push` a la rama principal actualiza el sitio automáticamente.
-- **HTTPS gratuito** con dominio `github.io` sin configuración adicional.
-- **Cero costo de infraestructura**: ideal para proyectos personales y portafolios.
-- **Alta disponibilidad** respaldada por la infraestructura de GitHub/Microsoft.
+---
 
-### 🟡 ¿Por qué CSS sin preprocesadores (SASS/LESS)?
+## ⚙️ Tecnologías Utilizadas
 
-- Para un proyecto de esta escala, **CSS3 nativo** con variables (`--custom-properties`) y `flexbox`/`grid` es suficiente y evita añadir pasos de compilación al flujo de trabajo.
-- Reduce la fricción para contribuidores o revisores que quieran inspeccionar el código.
-
-### 🟠 Optimización de SEO y redes sociales
-
-Se implementaron **metaetiquetas Open Graph** y **Twitter Cards** para que al compartir el enlace en redes sociales se muestre una vista previa rica con imagen, título y descripción. Esto es fundamental para la visibilidad profesional del portafolio.
+| Categoría            | Tecnología             |
+| -------------------- | ---------------------- |
+| Estructura           | HTML5                  |
+| Estilos              | CSS3                   |
+| Interactividad       | JavaScript Vanilla     |
+| Control de versiones | Git                    |
+| Hosting              | GitHub Pages           |
+| Diseño Responsive    | Flexbox + CSS Grid     |
+| SEO                  | Meta Tags + Open Graph |
 
 ---
 
 ## 📁 Estructura del Proyecto
 
-```
+```text
 PaginaWeb/
 │
-├── index.html          # Página principal del portafolio
-├── og-image.png        # Imagen de preview para redes sociales
+├── index.html
 ├── assets/
 │   ├── css/
-│   │   └── styles.css  # Estilos principales
 │   ├── js/
-│   │   └── main.js     # Lógica de interactividad (scroll, navegación)
-│   └── img/            # Recursos visuales y foto de perfil
-└── README.md           # Este archivo
+│   ├── img/
+│   └── documents/
+│
+├── README.md
+└── LICENSE
 ```
-
-> ⚠️ *La estructura puede variar ligeramente según la versión actual del repositorio.*
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Visualizar el Proyecto
 
-### Ver en línea
-El portafolio está disponible en: **[https://coderhouse2025-droid.github.io/PaginaWeb/](https://coderhouse2025-droid.github.io/PaginaWeb/)**
+### Sitio Online
 
-### Ejecutar localmente
+https://coderhouse2025-droid.github.io/PaginaWeb/
+
+### Ejecutar Localmente
 
 ```bash
-# 1. Clonar el repositorio
 git clone https://github.com/coderhouse2025-droid/PaginaWeb.git
 
-# 2. Ingresar al directorio
 cd PaginaWeb
 
-# 3. Abrir en el navegador
-# Opción A — Abrir directamente:
-open index.html
+# Abrir index.html
+```
 
-# Opción B — Servidor local con VS Code (extensión Live Server):
-# Click derecho en index.html → "Open with Live Server"
+O utilizando un servidor local:
 
-# Opción C — Servidor local con Python:
-python3 -m http.server 8080
-# Luego visitar http://localhost:8080
+```bash
+python -m http.server 8080
 ```
 
 ---
 
-## 📊 Métricas
+## 📈 Aspectos Destacados
 
-<div align="center">
-
-| 📅 Experiencia | 📁 Proyectos | 📊 Dashboards | 🔍 Auditorías |
-|:--------------:|:------------:|:-------------:|:-------------:|
-| **19+ años** | **16+** | **15+** | **50+** |
-
-</div>
+* Diseño profesional orientado al mercado tecnológico.
+* Experiencia de usuario optimizada.
+* Código ligero y fácil de mantener.
+* Excelente rendimiento en GitHub Pages.
+* Estructura escalable para futuras mejoras.
 
 ---
 
-## 📬 Contacto
+## 🔮 Mejoras Futuras
 
-¿Querés colaborar, contratar o simplemente charlar sobre datos?
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/juan-manuel-orellana)
-[![GitHub](https://img.shields.io/badge/GitHub-Seguir-181717?style=for-the-badge&logo=github)](https://github.com/coderhouse2025-droid)
-[![Portfolio](https://img.shields.io/badge/Portafolio-Visitar-FF5722?style=for-the-badge&logo=google-chrome)](https://coderhouse2025-droid.github.io/PaginaWeb/)
-
-</div>
+* Modo oscuro.
+* Versión bilingüe (ES / EN).
+* Integración con APIs externas.
+* Dashboard interactivo de métricas.
+* Sistema dinámico de gestión de proyectos.
 
 ---
 
-<div align="center">
+## 👨‍💻 Autor
 
-**⭐ Si este proyecto te resultó útil, ¡no olvides dejar una estrella!**
+Juan Manuel Orellana
 
-*Hecho con ❤️ y mucho ☕ por Juan Manuel Orellana · Buenos Aires, Argentina*
+Desarrollado como proyecto de portfolio profesional y práctica de desarrollo frontend.
 
-![Footer](https://img.shields.io/badge/Data_Science-Machine_Learning-blueviolet?style=flat-square)
-![Footer](https://img.shields.io/badge/Business_Intelligence-BI_Analyst-blue?style=flat-square)
-![Footer](https://img.shields.io/badge/Coderhouse-2026-orange?style=flat-square)
+---
 
-</div>
+## 📄 Licencia
+
+MIT License.
