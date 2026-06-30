@@ -20,11 +20,6 @@
 
 <img width="1264" height="843" alt="Mockup -Web" src="https://github.com/user-attachments/assets/3a8bec18-84f0-42d5-9b09-15d0aa5bdab1" />
 
-
-```markdown
-![Professional Portfolio Website](assets/img/preview.png)
-```
-
 ---
 
 ## 📌 Descripción
