@@ -1,4 +1,5 @@
 # 📊 Professional Portfolio Website
+<img width="2752" height="1536" alt="Perfil_Profesional_Ciencia_de_Datos" src="https://github.com/user-attachments/assets/8357b57d-d6f5-4c58-bf53-3dbb6e85d37e" />
 
 <div align="center">
 
