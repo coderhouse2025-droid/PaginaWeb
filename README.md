@@ -81,8 +81,8 @@ professional-portfolio-website/
 │   ├── img/            # Assets visuales, capturas y mockups de la interfaz
 │   └── documents/      # Archivos de descarga ejecutiva (CV, Certificaciones)
 │
-├── README.md           # Documentación técnica del repositorio
-└── LICENSE            # Términos de licenciamiento de la solución
+├── README.md           # Documentación técnica del repositorio[cite: 1]
+└── LICENSE            # Términos de licenciamiento de la solución[cite: 1]
 ---
 
 ## 🚀 Entornos de Producción
