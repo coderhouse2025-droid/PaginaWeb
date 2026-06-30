@@ -18,10 +18,6 @@
 
 ---
 
-<img width="1264" height="843" alt="Mockup -Web" src="https://github.com/user-attachments/assets/3a8bec18-84f0-42d5-9b09-15d0aa5bdab1" />
-
----
-
 ## 📌 Descripción
 
 **Professional Portfolio Website** es un proyecto de desarrollo web enfocado en la construcción de sitios profesionales de marca personal para perfiles tecnológicos y analíticos.
@@ -30,6 +26,7 @@ El objetivo principal fue diseñar una solución moderna, rápida y visualmente 
 
 El proyecto fue desarrollado utilizando exclusivamente tecnologías web nativas, priorizando rendimiento, mantenibilidad, accesibilidad y compatibilidad multiplataforma.
 
+<img width="1264" height="843" alt="Mockup -Web" src="https://github.com/user-attachments/assets/3a8bec18-84f0-42d5-9b09-15d0aa5bdab1" />
 ---
 
 ## 🎯 Caso de Uso
