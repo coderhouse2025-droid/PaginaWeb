@@ -72,15 +72,22 @@ Para auditar, modificar o replicar el entorno de desarrollo localmente, ejecute 
 ## 📁 Estructura del Proyecto
 
 professional-portfolio-website/
+
 │
 ├── index.html          # Punto de entrada principal (Estructura semántica del Hub)
+
 ├── assets/             # Recursos estáticos del sistema
+
 │   ├── css/            # Hojas de estilo y variables globales de diseño
+
 │   ├── js/             # Controladores de eventos e interactividad
+
 │   ├── img/            # Assets visuales, capturas y mockups de la interfaz
+
 │   └── documents/      # Archivos de descarga ejecutiva (CV, Certificaciones)
 │
 ├── README.md           # Documentación técnica del repositorio
+
 └── LICENSE            # Términos de licenciamiento de la solución
 
 ---
