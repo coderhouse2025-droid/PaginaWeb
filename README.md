@@ -87,7 +87,7 @@ Para auditar, modificar o replicar el entorno de desarrollo localmente, ejecute 
 
 Juan Manuel Orellana - Data Analytics • Business Intelligence • Data Science
 
-Portfolio Profesional: https://coderhouse2025-droid.github.io/Portafolio-JM/
+Portafolio Profesional: https://coderhouse2025-droid.github.io/Portafolio-JM/
 
 LinkedIn: https://www.linkedin.com/in/juan-manuel-orellana
 
